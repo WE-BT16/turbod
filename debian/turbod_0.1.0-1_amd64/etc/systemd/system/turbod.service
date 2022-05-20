@@ -1,0 +1,12 @@
+[Install]
+WantedBy = multi-user.target
+
+[Unit]
+Description = Turbo daemon
+
+[Service]
+Type = simple
+After = network-online.target
+ExecStart = /usr/bin/turbod --start
+ExecStop = /usr/bin/turbod --stop
+Restart=on-failure
