@@ -15,6 +15,8 @@ include_directories(${PROJECT_NAME} PRIVATE
 # Create an executable
 add_executable(${PROJECT_NAME}
     src/main.cpp
+    src/logger/logger.h
+    src/logger/logger.cpp
 )
 
 # Link libraries
