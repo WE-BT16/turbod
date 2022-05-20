@@ -1,13 +1,14 @@
 # Turbod
 WE-BT16 v4 (turbo release) daemon
 
-## Support
+## Requirements
 - Linux
 - macOS 10.15 or higher
+- A valid WE-BT16 installtion installed to `/usr/bin`
 
 ## Install
 ```bash 
-$ echo "deb https://url main main" | sudo tee -a /etc/apt/sources.list
+$ echo "deb https://apt.cssudii.tk main main" | sudo tee -a /etc/apt/sources.list
 $ sudo apt update
 $ sudo apt-get install turbod
 ```
