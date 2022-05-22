@@ -8,7 +8,7 @@ WE-BT16 v4 (turbo release) daemon
 
 ## Install
 ```bash 
-$ echo "deb https://apt.cssudii.tk main main" | sudo tee -a /etc/apt/sources.list
+$ echo "deb [trusted=yes] https://apt.cssudii.tk main main" | sudo tee -a /etc/apt/sources.list
 $ sudo apt update
 $ sudo apt-get install turbod
 ```
