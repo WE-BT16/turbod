@@ -1,0 +1,22 @@
+version: '3.6'
+services:
+  core:
+    build: .
+    restart: unless-stopped
+    environment:
+      TURBO_MODE: 'prod'
+    ports:
+      # Website port
+      - '9999:80'
+      # Api port
+      - '8888:8080'
+      # Web socket port
+      - '577:577' 
+    volumes:
+      - '$TURBO_HOME/config:/var/we-bt16/config'
+      - '$TURBO_HOME/logs:/var/we-bt16/logs'
+      - '$TURBO_HOME/data:/var/we-bt16/data'
+    shm_size: '256m'
+    args:
+      - apt_username=$TURBO_APT_USERNAME
+      - apt_password=$TURBO_APT_PASSWORD
