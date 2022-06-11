@@ -13,6 +13,12 @@ $ sudo apt update
 $ sudo apt-get install turbod
 ```
 
+## Usage
+```bash
+$ sudo systemctl enable turbod
+$ sudo systemctl start turbod
+```
+
 ## Build
 ```bash
 $ mkdir build && cd build

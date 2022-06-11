@@ -7,6 +7,5 @@ Description = Turbo daemon
 [Service]
 Type = simple
 After = network-online.target
-ExecStart = /usr/bin/turbod --start
-ExecStop = /usr/bin/turbod --stop
+ExecStart = /usr/bin/turbod
 Restart=on-failure

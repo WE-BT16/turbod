@@ -17,6 +17,7 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
     src/logger/logger.h
     src/logger/logger.cpp
+    src/util.h
 )
 
 # Link libraries

@@ -1,0 +1,26 @@
+---
+core:
+  database:
+    postgres:
+      url: 'postgresql://'
+    redis:
+      enable: true
+      url: ''
+  general:
+    mode: 'dev' # or prod
+    support-guild: ''
+    client:
+      id: ''
+      secret: ''
+  dashboard:
+    enable: true
+    port: 8090
+  api:
+    port: 8080
+  website:
+    port: 80
+  bot:
+    tcp-server:
+      enable: true
+      port: 577
+    token: 'BOT_TOKEN'
